@@ -112,7 +112,9 @@ backspace.addEventListener("click", () =>{
 // Finalize the calculation
 
 equalButton.addEventListener("click", () => {
-    display.textContent = operate(+a, operator, +currentNumber);
+    if (a != null) {
+        display.textContent = operate(+a, operator, +currentNumber);
+    }
 });
 
 // Clear the display
